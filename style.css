@@ -1,3 +1,6 @@
+/* Root */
+:root --white
+
 /* Home */
 
 * {
@@ -27,6 +30,19 @@ body {
   margin: 0;
 }
 
+.main-index {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  margin: 0 100px;
+}
+
+.content {
+  padding: 15px;
+}
+
 .header {
   /* position: fixed; */
   margin: 0;
@@ -41,12 +57,6 @@ body {
   border: 5px solid;
 }
 
-.box {
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
-}
-
 .wrapper {
   margin: 0 0 10px 0;
   padding: 10px;
@@ -58,9 +68,8 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(4);
-  grid-template-rows: repeat(4);
-  align-content: space-around;
+  grid-template-columns: repeat(4, [col-start] [col-end]);
+  grid-template-rows: repeat(5, [col-start] [col-end]);
   justify-content: space-between;
 }
 
@@ -71,13 +80,10 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.item-button {
-  grid-column: 3 / 4;
-  grid-row: 3 / 3;
-  display: flex;
-  justify-content: center;
-  border: 2px solid;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .item-answer1 {
@@ -116,15 +122,32 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.item-button {
+  grid-column: 2 / 4;
+  grid-row: 3 / 3;
+  display: flex;
+  justify-content: center;
+  border: 2px solid;
+  font-style: italic;
+  background-color: rgb(255, 186, 57);
+  box-shadow: rgba(0, 0, 0, 0.119) 0px 3px 8px;
+}
+
 .item-final-answer {
+  /* display: none; */
   grid-column: 1 / 5;
   grid-row: 4 / 4;
   border: 2px solid;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.item-final-answer:target {
+  display: block;
+}
+
 .footer {
   position: fixed;
+  bottom: 0;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -136,7 +159,45 @@ body {
   border: 5px solid;
 }
 
+.footer__item--active--anchor {
+  color: var(--white); /* vorher deklarieren in base.css als  */
+  font-weight: 800;
+  text-decoration: underline;
+  border: 1px solid var(--white);
+  border-radius: 100vm;
+  padding: 0.2rem 0.4rem 0.3rem;
+}
+
 /* Profile Pic: */
 .profile-pic {
   border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.skills {
+  background-color: orange;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: white;
+}
+
+.button-style {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Create new Questions: */
+.question-input {
+  width: 50rem;
+  height: 10rem;
 }
