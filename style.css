@@ -1,9 +1,16 @@
 /* Root */
-:root --white
+:root {
+  /* base.css - Basic settings vorab einstellen (body, h1, */
+  --white: #ffffff;
+}
 
 /* Home */
 
-* {
+*,
+*::before,  /* Damit werden ::before Pseudo-Klassen abgefangen. */
+*::after {
+  /* Damit werden ::before Pseudo-Klassen abgefangen. */
+  /* base.css */
   box-sizing: border-box;
   font-family: sans-serif;
 }
@@ -28,9 +35,11 @@
 
 body {
   margin: 0;
+  font-size: 1.25rem; /* Standard für body */
+  line-height: 1.5; /* Standard für body */
 }
 
-.main-index {
+.main__index {
   width: 750px;
   display: flex;
   flex-direction: column;
@@ -39,7 +48,7 @@ body {
   margin: 0 100px;
 }
 
-.content {
+.grid__content {
   padding: 15px;
 }
 
@@ -57,7 +66,7 @@ body {
   border: 5px solid;
 }
 
-.wrapper {
+.grid__wrapper {
   margin: 0 0 10px 0;
   padding: 10px;
   background-color: rgb(250, 209, 133);
@@ -73,20 +82,20 @@ body {
   justify-content: space-between;
 }
 
-.item-question {
+.item__question {
   grid-column: 1 / 5;
   grid-row: 1 / 1;
   border: 2px solid;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.box {
+.grid__wrapper--box {
   background-color: white;
   border-radius: 10px;
   padding: 10px;
 }
 
-.item-answer1 {
+.grid__wrapper--answer1 {
   grid-column: 1 / 1;
   grid-row: 2 / 2;
   display: flex;
@@ -95,7 +104,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.item-answer2 {
+.grid__wrapper--answer2 {
   grid-column: 2 / 2;
   grid-row: 2 / 2;
   display: flex;
@@ -104,7 +113,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.item-answer3 {
+.grid__wrapper--answer3 {
   grid-column: 3 / 3;
   grid-row: 2 / 2;
   display: flex;
@@ -113,7 +122,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.item-answer4 {
+.grid__wrapper--answer4 {
   grid-column: 4 / 4;
   grid-row: 2 / 2;
   display: flex;
@@ -122,7 +131,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.item-button {
+.grid__wrapper--button {
   grid-column: 2 / 4;
   grid-row: 3 / 3;
   display: flex;
@@ -133,7 +142,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.119) 0px 3px 8px;
 }
 
-.item-final-answer {
+.grid__wrapper--answer--final {
   /* display: none; */
   grid-column: 1 / 5;
   grid-row: 4 / 4;
@@ -141,11 +150,11 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.item-final-answer:target {
+.grid__wrapper--answer--final:target {
   display: block;
 }
 
-.footer {
+.footer__item {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -169,7 +178,7 @@ body {
 }
 
 /* Profile Pic: */
-.profile-pic {
+.profile__pic {
   border-radius: 50%;
   display: flex;
   justify-content: space-around;
@@ -191,13 +200,13 @@ body {
   border-color: white;
 }
 
-.button-style {
+.button__style {
   display: flex;
   justify-content: space-around;
 }
 
 /* Create new Questions: */
-.question-input {
+.question__input {
   width: 50rem;
   height: 10rem;
 }
