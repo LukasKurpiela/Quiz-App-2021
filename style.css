@@ -1,16 +1,17 @@
 /* Root */
+/*
 :root {
-  /* base.css - Basic settings vorab einstellen (body, h1, */
+  /* base.css - Basic settings vorab einstellen (body, h1, 
   --white: #ffffff;
 }
 
-/* Home */
+/* Home 
 
 *,
-*::before,  /* Damit werden ::before Pseudo-Klassen abgefangen. */
+*::before,  /* Damit werden ::before Pseudo-Klassen abgefangen. 
 *::after {
-  /* Damit werden ::before Pseudo-Klassen abgefangen. */
-  /* base.css */
+  /* Damit werden ::before Pseudo-Klassen abgefangen. 
+  /* base.css 
   box-sizing: border-box;
   font-family: sans-serif;
 }
@@ -31,14 +32,14 @@
 .sticky + .content {
   padding-top: 102px;
 }
-*/
+
 
 body {
   margin: 0;
-  font-size: 1.25rem; /* Standard für body */
-  line-height: 1.5; /* Standard für body */
+  font-size: 1.25rem; /* Standard für body 
+  line-height: 1.5; /* Standard für body 
   /* display: flex;
-  justify-content: space-around; */
+  justify-content: space-around; 
 }
 
 .main__index {
@@ -47,7 +48,7 @@ body {
   flex-direction: column;
   text-align: center;
   align-content: space-between;
-  /* justify-content: center; */
+  /* justify-content: center; 
   margin: auto;
 }
 
@@ -56,11 +57,11 @@ body {
 }
 
 .header__styling {
-  /* position: fixed; */
+  /* position: fixed; 
   margin: 0;
   left: 0;
   top: 0;
-  width: 100%; /* Wieso auf Mobilansicht nicht 100 % */
+  width: 100%; /* Wieso auf Mobilansicht nicht 100 % 
   background-color: orange;
   display: flex;
   justify-content: space-around;
@@ -74,8 +75,8 @@ body {
 }
 
 .grid__wrapper {
-  margin: 0 0 10px 0;
-  padding: 10px;
+  margin: 0px 20px;
+  padding: 0 10px;
   background-color: rgb(250, 209, 133);
   width: auto;
   height: auto;
@@ -150,7 +151,7 @@ body {
 }
 
 .grid__wrapper--answer--final {
-  /* display: none; */
+  /* display: none; 
   grid-column: 1 / 5;
   grid-row: 4 / 4;
   border: 2px solid;
@@ -176,14 +177,14 @@ body {
 }
 
 .footer__item--active:hover {
-  color: var(--white); /* vorher deklarieren in base.css als  */
+  color: var(--white); /* vorher deklarieren in base.css als  
   text-decoration: underline;
   border: 1px solid var(--white);
   border-radius: 100vm;
   padding: 0.2rem 0.4rem 0.3rem;
 }
 
-/* Profile Pic: */
+/* Profile Pic:
 .profile__pic {
   border-radius: 33%;
   display: flex;
@@ -194,7 +195,8 @@ body {
 .profile__pic--name {
   display: flex;
   flex-direction: column;
-  text-align:center;
+  text-align: center;
+}
 
 .skill {
   list-style: none;
@@ -217,8 +219,9 @@ body {
   justify-content: space-around;
 }
 
-/* Create new Questions: */
+Create new Questions: */
 .question__input {
   width: 50rem;
   height: 10rem;
 }
+*/

@@ -1,0 +1,19 @@
+/* Root */
+:root {
+  --white: #ffffff;
+}
+
+*,
+  *::before,  /* Damit werden ::before Pseudo-Klassen abgefangen. */
+  *::after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 1.25rem; /* Standard für body */
+  line-height: 1.5; /* Standard für body */
+  /* display: flex;
+        justify-content: space-around; */
+}
