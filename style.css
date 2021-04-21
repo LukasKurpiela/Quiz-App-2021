@@ -37,6 +37,8 @@ body {
   margin: 0;
   font-size: 1.25rem; /* Standard für body */
   line-height: 1.5; /* Standard für body */
+  /* display: flex;
+  justify-content: space-around; */
 }
 
 .main__index {
@@ -44,26 +46,31 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-content: center;
-  margin: 0 100px;
+  align-content: space-between;
+  /* justify-content: center; */
+  margin: auto;
 }
 
 .grid__content {
   padding: 15px;
 }
 
-.header {
+.header__styling {
   /* position: fixed; */
   margin: 0;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100%; /* Wieso auf Mobilansicht nicht 100 % */
   background-color: orange;
-  text-align: center;
   display: flex;
   justify-content: space-around;
-  padding: 10px;
+  text-align: center;
+  padding: 10px 10px 0 10px;
   border: 5px solid;
+}
+
+.h1__styling {
+  margin: 0;
 }
 
 .grid__wrapper {
@@ -164,13 +171,12 @@ body {
   text-align: center;
   display: flex;
   justify-content: space-around;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
   border: 5px solid;
 }
 
-.footer__item--active--anchor {
+.footer__item--active:hover {
   color: var(--white); /* vorher deklarieren in base.css als  */
-  font-weight: 800;
   text-decoration: underline;
   border: 1px solid var(--white);
   border-radius: 100vm;
@@ -179,10 +185,16 @@ body {
 
 /* Profile Pic: */
 .profile__pic {
-  border-radius: 50%;
+  border-radius: 33%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  text-align: center;
 }
+
+.profile__pic--name {
+  display: flex;
+  flex-direction: column;
+  text-align:center;
 
 .skill {
   list-style: none;
