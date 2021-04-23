@@ -53,6 +53,15 @@
   top: -12px;
   left: 90%;
   z-index: 100;
+  opacity: 0.5;
+}
+.grid__wrapper--bookmark:hover {
+  opacity: 1;
+  transition: all 0.8s ease;
+}
+
+.grid__wrapper--bookmark:active {
+  opacity: 1;
 }
 
 .item__question {
@@ -141,14 +150,46 @@
   border: 5px solid;
   z-index: 101;
 }
-/* 
-.footer__item--active {
-  color: var(--white); /* vorher deklarieren in base.css als 
-  text-decoration: underline;
-  border: 1px solid var(--white);
+
+.footer__item--home {
+  /* fill: red; */
+  content: url(../Home.svg);
+  width: 50px;
+  margin-bottom: 8px;
+  /*   text-decoration: underline;
+  border: 1px solid white;
   border-radius: 100vm;
-  padding: 0.2rem 0.4rem 0.3rem; 
-} */
+  padding: 0.2rem 0.4rem 0.3rem; */
+}
+
+.footer__item--bookmark {
+  content: url(../Bookmark.svg);
+  width: 50px;
+  margin-bottom: 8px;
+}
+
+.footer__item--create {
+  content: url(../List.svg);
+  width: 50px;
+  margin-bottom: 8px;
+}
+
+.footer__item--profile {
+  content: url(../Profile.svg);
+  width: 50px;
+  margin-bottom: 8px;
+}
+
+.footer__item--inactive {
+  opacity: 0.5;
+}
+
+.footer__item--inactive:hover {
+  opacity: 1;
+  transition: all 0.8s ease;
+  /* fill-opacity: 0.5;
+  fill: red; */
+}
 
 /* Profile Pic: */
 .profile__pic {
