@@ -28,6 +28,9 @@
 
 .grid__content {
   padding: 15px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
 }
 
 .grid__wrapper {
@@ -42,10 +45,16 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: grid;
   grid-gap: 10px;
-  /* grid-template-columns: repeat(4, 160px);
-  grid-template-rows: repeat(4, 150px); */
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(1fr);
   justify-content: space-between;
 }
+
+/* @media (min-width: 850px) {
+  .grid__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
 
 .grid__wrapper--bookmark {
   position: absolute;
@@ -222,12 +231,18 @@
 }
 
 .button__style {
+  border-radius: 10px;
+  border-style: solid;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
   display: flex;
   justify-content: space-around;
 }
 
 /* Create new Questions: */
 .question__input {
-  width: 50rem;
+  width: 40rem;
   height: 10rem;
 }
