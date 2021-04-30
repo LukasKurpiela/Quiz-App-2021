@@ -12,8 +12,8 @@
 
 body {
   margin: 0;
-  font-size: 1.25rem; /* Standard für body */
-  line-height: 1.5; /* Standard für body */
+  font-size: 1.15rem; /* Standard für body 1.25 */
+  line-height: 1.4; /* Standard für body 1.5 */
   /* display: flex;
         justify-content: space-around; */
 }
